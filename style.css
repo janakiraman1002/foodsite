@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+.container{
+    position: relative;
+}
+body{
+    background: #fff;
+    padding: 0 9%;
+}
+.header{
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 82%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.burger i{
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-box{
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: whitesmoke;
+}
+.search-box input{
+    background: transparent;
+    padding: 10px;
+    width: 80%;
+}
+.menu-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-icons i{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:whitesmoke;
+}
+.cart-icon {
+    position: sticky;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #order-count {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #order{
+    position: absolute;
+    top: 0;
+    right: 1px;
+    /* z-index: -1; */
+    font-size: 12px;
+    color: red;
+  }
+                          /* this order list and total */
+.cart{
+   position:absolute;
+   top: 0;
+   right:0;
+   width: 400px;
+   height: 100vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding: 20px;
+   background-color: rgb(245, 241, 241);
+   display: none;
+   z-index: 1000;
+}
+.open.cart{
+    display: block;
+    transition: 0.5s;
+}
+
+.cart-title{
+ text-align: center;
+ font-size: 25px;
+ font-weight: bold;
+ margin: 1rem;
+}
+.food-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 10px;
+}
+.cart img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.detail-box .food-title{
+    font-weight: bolder;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    font-weight:400;
+}
+.cart-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: orangered;
+    font-weight: bold;
+}
+
+input{
+    width: 40px;
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+}
+.cart-remove{
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+.total-price{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-check{
+    padding: 12px 20px;
+    background-color:red;
+    color:white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+    border-radius: 5px;
+}
+.cart-close{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size:24px;
+    font-weight: bold;
+}
+
+                                     /* content */
+
+.content{
+background-image: url(https://images.pexels.com/photos/59999/raspberries-fruits-fruit-berries-59999.jpeg?auto=compress&cs=tinysrgb&w=600);
+background-size: cover;
+height: 25vh;
+background-position: center;
+border-radius: 10px;
+margin-top: 10px;
+margin-top: 70px;
+}
+.content-head{
+    background: rgba(107, 101, 101, 0.6);
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+        /* menu */
+ .section-head{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 1rem 0 10px 0;
+    color: gray;
+ }       
+
+ /* menu-list */
+
+ .menu-list{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;    
+    
+ }
+
+ .menu-item{
+    width: 127px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    /* padding: 10px 13px; */
+    border-radius: 10px;
+    color: gray;
+    overflow: hidden;
+ }
+ .menu-item img{
+    transform: scale(1.4);
+    z-index: -1;
+ }
+
+ .menu-item:hover img{
+    transform: scale(1);
+ }
+ .zoom{
+    transition: 0.4s;
+    object-fit: cover;
+ }
+ .menu-item h2{
+    font-size: 20px;
+   color:gray;
+  
+ }
+
+ .menu-item img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+    border-radius: 10px;
+ }
+ .menu-item:hover h2{
+    color: black;
+ }
+ .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .product {
+    width: 259px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .product .img{
+    overflow: hidden;
+  }
+  .product img:hover{
+    transform: scale(1.5);
+  }
+  .product img{
+    width: 100%;
+    height:250px;
+    transform:scale(1s);
+    z-index: -1;
+  }
+  .img img{
+    z-index: -1;
+  }
+  .food-cover{
+    object-fit: cover;
+    transition: ease-in-out 1s;
+  }
+  .product h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #3e8e41;
+  }
+  
+  @media(max-width:1200px)
+  {
+    .menu-item{
+      width: 11%;
+      margin-left: 1px;
+  }
+  .content{
+    height: 15vh;
+}
+  .product {
+    width: 21%;
+}
+  }
+
+
+  @media(max-width:992px)
+  {
+    .content{
+        height: 15vh;
+    }
+    .menu-item{
+        width: 23%;
+    }
+    .product {
+        width: 43%;
+    }
+   
+  }
+
+  @media(max-width:576px)
+  {
+    .menu-item{
+        width: 47%;
+    } 
+    .section-head{
+        font-size: 15px;
+      margin-left: 10px;
+     } 
+     .content-head {
+        padding-left: 8px;
+        font-size: 10px;
+     }
+     .order{
+        width: 340px;
+    }
+    .product {
+        width: 90%;
+    }
+    .cart{
+        width:100%;
+    }
+  }
+
+  @media(max-width:375px)
+  {
+    .menu-item{
+        width: 46%;
+    } 
+    .content-head {
+      padding-left: 8px;
+      font-size: 8px;
+   }
+  }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food court</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/654adca185.js" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <header class="header">
+           <nav class="menu">
+              <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+              </div>
+              <div class="menu-icons">
+                <div class="cart-icon">
+                    <i id="cart-icon" class="fa-solid position-relative fa-cart-shopping">
+                      <span id="order">
+                        0
+                      </span>
+                    </i> 
+                  </div>
+              </div>
+           </nav>
+           <div  class="cart cart-active">
+            <div class="cart-title">Food Items</div>
+                <div class="cart-content">
+
+                    <!-- <div class="food-box">
+                        <img src="./images/fish.jpeg" alt="">
+                        <div class="detail-box">
+                            <div class="food-title">Fish</div>
+                            <div class="price-box">
+                                <div class="cart-price">$10.99</div>
+                                <div class="cart-amt">$10.99</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <div class="cart-remove">
+                        <i class="fa-solid fa-trash" name="trash" ></i>
+                        </div>
+                    </div>
+
+                    <div class="food-box">
+                        <img src="./images/icecream.jpeg" alt="">
+                        <div class="detail-box">
+                            <div class="food-title">Ice Cream</div>
+                            <div class="price-box">
+                                <div class="cart-price">$10.99</div>
+                                <div class="cart-amt">$10.99</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <div class="cart-remove">
+                        <i class="fa-solid fa-trash" name="trash" ></i>
+                        </div>
+                    </div>
+
+                    <div class="food-box">
+                        <img src="./images/fish.jpeg" alt="">
+                        <div class="detail-box">
+                            <div class="food-title">Fish</div>
+                            <div class="price-box">
+                                <div class="cart-price">$10.99</div>
+                                <div class="cart-amt">$10.99</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <div class="cart-remove">
+                        <i class="fa-solid fa-trash" name="trash" ></i>
+                        </div>
+                    </div> -->  
+                            </div>
+                            <div class="total">
+                                <div class="total-title">
+                                  Total
+                                </div>
+                                <div class="total-price">Rs.0</div>
+                            </div>
+                            <div class="btn-check">Checkout</div>
+                            <div class="cart-close">
+                                <i id="cart-close"  class="fa-solid fa-x"></i>
+                            </div>
+                        </div>
+
+           </div>
+           </div>
+        </header>
+                                       <!--content-section  -->
+        <section class="content">
+           <div class="content-head">
+            <h1>Quice Bite </h1>
+                <span class="quote">A recipe has no soul. You, as the cook, must bring soul to the recipe.</span>
+           </div>
+        </section>
+
+        <main>
+            <h2 class="section-head">Food Menu</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/8d/a0/13/8da0131352880a25a12c32ee319aa029.jpg" alt="" class="zoom">
+                    <h2>biriyani</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/b7/b0/47/b7b047ab24e94d1ee527b2a18b463ecd.jpg" alt="" class="zoom">
+                    <h2>Fish</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/b6/94/0e/b6940e530fa87fdf8f4e9cdf5ccafc36.jpg" alt="" class="zoom">
+                    <h2>Pizza</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/eb/cb/c6/ebcbc6aaa9deca9d6efc1efc93b66945.jpg" alt="" class="zoom">
+                    <h2>Burger</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/a4/3b/d8/a43bd8140c7bda2c489a64824805ff5b.jpg" alt="" class="zoom">
+                    <h2>Ice cream</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/7f/6d/3e/7f6d3ebdca842e61864b698a277c5418.jpg" alt="" class="zoom">
+                    <h2>Dosa</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/27/88/fd/2788fdeb927d95747176b885dbdfdd84.jpg" alt="" class="zoom">
+                    <h2>Thanduri</h2>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/18/60/4c/18604cbbd8afcdb92239853c06b78172.jpg" alt="" class="zoom">
+                    <h2>Veg</h2>
+                </div>
+            </div>
+                                               <!-- card-section -->
+            <h2 class="section-head">Menu Items</h2>
+
+            
+                <div class="products">
+                    <div class="product">
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/42/ed/47/42ed4763ec9b587b97583aeb4164de7a.jpg" alt="" class="food-cover">
+                        </div>
+                      <h2 id="dish">Prawn with chilli</h2>
+                      <p>Rs.210</p>
+                      <button id="order-now" class="add-to-cart" data-price="10.99" data-name="Fish">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="https://i.pinimg.com/236x/39/ba/c3/39bac35def167dfab80fba160386968b.jpg" alt="img" class="food-cover">
+                        </div>
+                      <h2 id="dish">Ice Cream</h2>
+                      <p>Rs.200</p>
+                      <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="https://i.pinimg.com/236x/da/25/92/da2592e0d25f079cbf9aedf436cabf6f.jpg" alt="img" class="food-cover">
+                        </div>
+                        <h2 id="dish">Chicken Biriyani</h2>
+                        <p>Rs.350</p>
+                        <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                      </div>
+                      <div class="product">
+                            <div class="img">
+                                <img src="https://i.pinimg.com/564x/51/78/98/5178986ba31d806322b1fc56ab9cba7e.jpg" alt="img" class="food-cover">
+                            </div>
+                        <h2 id="dish">Chicken Gravy</h2>
+                        <p>Rs.150</p>
+                        <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                      </div>
+                      <div class="product">
+                               <div class="img">
+                                <img src="https://images.pexels.com/photos/2271107/pexels-photo-2271107.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="food-cover">
+                               </div>
+                        <h2 id="dish">Burger and Fingerchips</h2>
+                        <p>Rs.280</p>
+                        <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                      </div>
+                      <div class="product">
+                               <div class="img">
+                                <img src="https://i.pinimg.com/236x/0a/43/a9/0a43a9bd43f251ddc685d2e693d50ddd.jpg" alt="img" class="food-cover">
+                               </div>
+                        <h2 id="dish">Family Dosa</h2>
+                        <p>Rs.499</p>
+                        <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                      </div>
+                      <div class="product">
+                                <div class="img">
+                                    <img src="https://i.pinimg.com/564x/85/4d/79/854d799abe029a92b9fda6692776e04b.jpg" alt="img" class="food-cover">
+                                </div>
+                        <h2 id="dish">Tandoori chicken</h2>
+                        <p>Rs.180</p>
+                        <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                      </div>
+                      <div class="product">
+                       <div class="img">
+                         <img src="https://i.pinimg.com/236x/2d/35/2d/2d352d1af945fee9dcbc5bfd994f46d6.jpg" alt="img" class="food-cover">
+                       </div>
+                        <h2 id="dish">Omelette</h2>
+                        <p>Rs.20</p>
+                        <button id="order-now" class="add-to-cart" data-price="9.99" data-name="Ice cream">Add to Cart</button>
+                      </div>
+                  </div>
+        </main>
+
+    </div>
+
+
+    <script src="scirpt.js"></script>
+</body>
+</html>
